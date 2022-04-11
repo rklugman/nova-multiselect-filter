@@ -51,7 +51,8 @@
 <script>
 import HandlesFilterValue from '../mixins/HandlesFilterValue';
 import Multiselect from 'vue-multiselect';
-import { Filterable, InteractsWithQueryString } from 'laravel-nova';
+import { default as Filterable } from 'laravel-nova-filterable';
+import { default as InteractsWithQueryString } from 'laravel-nova-interactswithquerystring'
 
 export default {
   components: { Multiselect },
@@ -139,7 +140,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '~vue-multiselect/dist/vue-multiselect.min.css';
+@import '~vue-multiselect/dist/vue-multiselect.css';
 
 .nova-multiselect-filter {
   .multiselect {
